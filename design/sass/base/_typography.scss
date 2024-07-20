@@ -1,0 +1,15 @@
+.heading {
+  &--primary {
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: $fw--bold;
+    span {
+      font-weight: $fw--light;
+      color: $color--gray;
+    }
+  }
+
+  &--description {
+    text-align: center;
+  }
+}

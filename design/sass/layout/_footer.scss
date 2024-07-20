@@ -1,0 +1,71 @@
+.footer {
+  margin-top: 4rem;
+
+  @include flexCenter;
+  gap: 1.6rem;
+
+  @media only screen and (max-width: 700px) {
+    gap: 6.2rem;
+    margin-top: 15rem;
+  }
+
+  .social__icons {
+    @include flexCenter;
+    gap: 1rem;
+    flex-direction: row;
+
+    @media only screen and (max-width: 700px) {
+      gap: 2.4rem;
+    }
+
+    .social__icon {
+      display: block;
+      padding: 0.8rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 1px solid $color--pale_blue;
+      transition: all 0.3s;
+
+      @media only screen and (max-width: 700px) {
+        width: 5rem;
+        height: 5rem;
+        padding: 0;
+      }
+
+      @include flexCenter;
+
+      svg {
+        fill: $color--blue;
+        width: 2rem;
+        height: 2rem;
+        transition: all 0.3s;
+
+        @media only screen and (max-width: 700px) {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+
+      &:hover,
+      &:active {
+        background-color: $color--blue;
+        border-color: none;
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 1rem;
+    color: $color--gray;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1.6rem;
+    }
+  }
+}

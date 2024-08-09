@@ -25,5 +25,3 @@ form.addEventListener('submit', function (e) {
     email.style.borderColor = 'hsl(223, 100%, 88%)';
   }
 });
-
-console.log('NEW');
